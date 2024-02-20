@@ -1,6 +1,11 @@
+---
+title: Uncommon tips & tricks
+---
+
 # Switchable keyboard layouts
 
-The easiest way to accomplish this is to set this using XKB settings, for example:
+The easiest way to accomplish this is to set this using XKB settings, for
+example:
 
 ```
 input {
@@ -9,11 +14,12 @@ input {
 }
 ```
 
-{{< callout type=important >}}
+{{< callout >}}
 
 The first layout defined in the input section will be the one used for binds by default.
 
-For example: `us,ua` -> config binds would be e.g. `SUPER, A`, while on `ua,us` -> `SUPER, Cyrillic_ef`
+For example: `us,ua` -> config binds would be e.g. `SUPER, A`, while on `ua,us`
+-> `SUPER, Cyrillic_ef`
 
 You can change this behavior globally or per-device by setting `resolve_binds_by_sym = 1`.
 In that case, binds will activate when the symbol typed matches the symbol specified in the bind.
@@ -24,17 +30,20 @@ while the `fr` layout is active.
 
 {{< /callout >}}
 
-You can also bind a key to execute `hyprctl switchxkblayout` for more keybind freedom.
-See [Using hyprctl](../Using-hyprctl).
+You can also bind a key to execute `hyprctl switchxkblayout` for more keybind
+freedom. See [Using hyprctl](../Using-hyprctl).
 
-To find the valid layouts and `kb_options`, you can check out the `/usr/share/X11/xkb/rules/base.lst`. For example:
+To find the valid layouts and `kb_options`, you can check out the
+`/usr/share/X11/xkb/rules/base.lst`. For example:
 
 To get the layout name of a language:
+
 ```sh
 grep -i 'persian' /usr/share/X11/xkb/rules/base.lst
 ```
 
-To get the list of keyboard shortcuts you can put in the `kb_options` to toggle keyboard layouts:
+To get the list of keyboard shortcuts you can put in the `kb_options` to toggle
+keyboard layouts:
 
 ```sh
 grep 'grp:.*toggle' /usr/share/X11/xkb/rules/base.lst
@@ -51,6 +60,7 @@ submap=clean
 bind=MOD,KEY,submap,reset
 submap=reset
 ```
+
 # Remap Caps-Lock to Ctrl
 
 ```
@@ -69,8 +79,9 @@ input {
 
 # Minimize Steam instead of killing
 
-Steam will exit entirely when it's last window is closed using the `killactive` dispatcher.
-To minimize Steam to tray, use the following script to close applications:
+Steam will exit entirely when it's last window is closed using the `killactive`
+dispatcher. To minimize Steam to tray, use the following script to close
+applications:
 
 ```sh
 if [ "$(hyprctl activewindow -j | jq -r ".class")" = "Steam" ]; then
@@ -82,12 +93,13 @@ fi
 
 # Window Dancing
 
-Some XWayland games like Rhythm Doctor and Friday Night Funkin' mods like to move 
-the windows by themselves, but that often doesn't work by default.
+Some XWayland games like Rhythm Doctor and Friday Night Funkin' mods like to
+move the windows by themselves, but that often doesn't work by default.
 
 For example, if you want to configure Rhythm Doctor, you'd have to:
 
 1. Set input rules
+
 ```ini
 input {
 	# ...
@@ -111,7 +123,9 @@ Click the GIF below to see a full demo video
 
 ## Shimeji
 
-To use Shimeji programs like [this](https://codeberg.org/thatonecalculator/spamton-linux-shimeji), set the following rules:
+To use Shimeji programs like
+[this](https://codeberg.org/thatonecalculator/spamton-linux-shimeji), set the
+following rules:
 
 ```ini
 windowrule=float, com-group_finity-mascot-Main
@@ -121,9 +135,10 @@ windowrule=noshadow, com-group_finity-mascot-Main
 windowrule=noborder, com-group_finity-mascot-Main
 ```
 
-{{< callout >}}
+{{< callout type=info >}}
 
-The app indicator probably won't show, so you'll have to `killall -9 java` to kill them.
+The app indicator probably won't show, so you'll have to `killall -9 java` to
+kill them.
 
 {{< /callout >}}
 
@@ -133,7 +148,8 @@ The app indicator probably won't show, so you'll have to `killall -9 java` to ki
 
 For increased performance in games, or for less distractions at a keypress
 
-1. create file `~/.config/hypr/gamemode.sh && chmod +x ~/.config/hypr/gamemode.sh` and add:
+1. create file
+   `~/.config/hypr/gamemode.sh && chmod +x ~/.config/hypr/gamemode.sh` and add:
 
 ```bash
 #!/usr/bin/env sh
@@ -152,7 +168,8 @@ fi
 hyprctl reload
 ```
 
-Edit to your liking of course. If animations are enabled, it disables all the pretty stuff. Otherwise, the script reloads your config to grab your defaults.
+Edit to your liking of course. If animations are enabled, it disables all the
+pretty stuff. Otherwise, the script reloads your config to grab your defaults.
 
 2. Add this to your `hyprland.conf`:
 

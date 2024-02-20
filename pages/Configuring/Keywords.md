@@ -1,10 +1,14 @@
+---
+title: Keywords
+---
+
 Keywords are not variables, but "commands" for more advanced configuring. On
 this page, you will be presented with some that do not deserve their own page.
 
 See the sidebar for more keywords to control binds, animations, monitors, et
 cetera.
 
-{{< callout type=important >}}
+{{< callout >}}
 
 Please remember, that for ALL arguments separated by a comma, if you want to
 leave one of them empty, you cannot reduce the number of commas, _unless told
@@ -180,8 +184,12 @@ layerrule = unset,NAMESPACE
 
 # Setting the environment
 
-{{< callout type=note >}} The `env` keyword works just like `exec-once`, meaning
-it will only fire once on Hyprland's launch. {{< /callout >}}
+{{< callout type=info >}}
+
+The `env` keyword works just like `exec-once`, meaning it will only fire once on
+Hyprland's launch.
+
+{{< /callout >}}
 
 You can use the `env` keyword to set environment variables at Hyprland's start,
 e.g.:
@@ -197,8 +205,10 @@ You can also add a `d` flag if you want the env var to be exported to D-Bus
 envd = XCURSOR_SIZE,24
 ```
 
-{{< callout type=important >}} Hyprland puts the raw string to the envvar. You
-should _not_ add quotes around the values.
+{{< callout >}}
+
+Hyprland puts the raw string to the envvar. You should _not_ add quotes around
+the values.
 
 e.g.:
 
