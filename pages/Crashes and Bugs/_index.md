@@ -1,3 +1,7 @@
+---
+title: Crashes and Bugs
+---
+
 # Getting the log
 
 If you are in a TTY, and the hyprland session that crashed was the last one you
@@ -58,15 +62,9 @@ _Do this in the tty, with no Hyprland instances running_
 
 Clone hyprland: `git clone --recursive https://github.com/hyprwm/Hyprland`
 
-cd to it: `cd Hyprland`
-
 `make asan`
 
-This will compile everything and launch Hyprland.
-
 Reproduce your crash. Hyprland will exit back to the tty.
-
-You can now launch your regular Hyprland session.
 
 Now, in either `cwd`, `~` or `./build`, search for file(s) named `asan.log.XXXXX` where XXXXX is a number.
 
