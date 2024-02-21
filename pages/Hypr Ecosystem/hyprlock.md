@@ -12,13 +12,16 @@ is not required, but recommended. Without it, locking shows the current screen.
 
 ### General
 
-Variables in the `general` category: | variable | description | type | default |
-| -- | -- | -- | -- | | disable_loading_bar | disables the loading bar on the
-bottom of the screen while hyprlock is booting up. | bool | false | |
-hide_cursor | hides the cursor instead of making it visible | bool | true | |
-grace | the amount of seconds for which the lockscreen will unlock on mouse
-movement. | int | 0 | | no_fade_in | disables the fadein animation | bool |
-false |
+Variables in the `general` category:
+
+| variable                                           | description                                                         | type  | default |
+| -------------------------------------------------- | ------------------------------------------------------------------- | ----- | ------- |
+| disable_loading_bar                                | disables the loading bar on the                                     |       |         |
+| bottom of the screen while hyprlock is booting up. | bool                                                                | false |         |
+| hide_cursor                                        | hides the cursor instead of making it visible                       | bool  | true    |
+| grace                                              | the amount of seconds for which the lockscreen will unlock on mouse |       |         |
+| movement.                                          | int                                                                 | 0     |         |
+| false                                              |                                                                     |       |         |
 
 ## Widgets
 
@@ -118,7 +121,7 @@ label {
 }
 ```
 
-Available variables for `text`: <<<<<<< HEAD
+Available variables for `text`:
 
 - `$USER` - username
 - `$TIME` - current time (e.g. `13:37`)
@@ -135,12 +138,3 @@ Worth noting:
 - Variables seen above are parsed _before_ the command is ran.
 - **do not** run commands that never exit. This will hang the
   AsyncResourceGatherer and you won't have a good time.
-
-||||||| parent of ac9342d (treewide: add frontmatter)
-
-- `$USER` - username
-- `$TIME` - current time (e.g. `13:37`) =======
-
-- `$USER` - username
-- `$TIME` - current time (e.g. `13:37`) >>>>>>> ac9342d (treewide: add
-  frontmatter)
