@@ -1,4 +1,5 @@
 ---
+weight: 18
 title: Example configurations
 ---
 

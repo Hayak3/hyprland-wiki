@@ -1,4 +1,5 @@
 ---
+weight: 7
 title: Window Rules
 ---
 

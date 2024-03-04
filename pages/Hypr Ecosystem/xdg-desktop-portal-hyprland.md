@@ -1,4 +1,5 @@
 ---
+weight: 5
 title: xdg-desktop-portal-hyprland
 ---
 

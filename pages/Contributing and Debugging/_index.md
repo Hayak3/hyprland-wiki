@@ -1,4 +1,5 @@
 ---
+weight: 11
 title: Contributing and Debugging
 ---
 
