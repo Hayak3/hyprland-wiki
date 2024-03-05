@@ -16,7 +16,7 @@ startup edit `hyprland.conf` and add: `exec-once = hypridle`.
 Variables in the `general` category:
 
 | variable | description | type | default |
-| ------------------- | ---------------------------------------------------------------------------------- | ------ | ------- |
+| --- | --- | --- | --- |
 | lock_cmd | command to run when receiving a dbus lock event (e.g. `loginctl lock-session`) | string | empty |
 | unlock_cmd | command to run when receiving a dbus unlock event (e.g. `loginctl unlock-session`) | string | empty |
 | before_sleep_cmd | command to run when receiving a dbus prepare_sleep event | string | empty |

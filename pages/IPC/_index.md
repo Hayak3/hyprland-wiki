@@ -15,7 +15,7 @@ echo $HYPRLAND_INSTANCE_SIGNATURE
 ## /tmp/hypr/\[HIS\]/.socket.sock
 
 Used for hyprctl-like requests. See the
-[Hyprctl page](../Configuring/Using-hyprctl) for commands.
+[Hyprctl page](../configuring/using-hyprctl) for commands.
 
 basically, write `[flag(s)]/command args`.
 
@@ -31,7 +31,7 @@ e.g.: `workspace>>2`
 ## Events list
 
 | name | description | data |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| --- | --- | --- |
 | workspace | emitted on workspace change. Is emitted ONLY when a user requests a workspace change, and is not emitted on mouse movements (see `activemon`) | `WORKSPACENAME` |
 | focusedmon | emitted on the active monitor being changed. | `MONNAME,WORKSPACENAME` |
 | activewindow | emitted on the active window being changed. | `WINDOWCLASS,WINDOWTITLE` |

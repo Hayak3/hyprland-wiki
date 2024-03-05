@@ -19,7 +19,7 @@ _hyprctl_ calls will be dispatched by the compositor _synchronously_, meaning
 any spam of the utility will cause slowdowns. It's recommended to use `--batch`
 for many control calls, and limiting the amount of info calls.
 
-For live event handling, see the [socket2](../../IPC/).
+For live event handling, see the [socket2](../../ipc/).
 
 {{< /callout >}}
 
@@ -181,17 +181,31 @@ Sets a window prop. Can be locked by adding `lock` at the end. If `lock` is not
 added, will be unlocked. Locking means a dynamic windowrule _cannot_ override
 this setting.
 
-Prop List: | prop | comment | | --- | --- | | animationstyle | string, cannot be
-locked | | rounding | int, -1 means not overriden | | bordersize | int, -1 means
-not overriden | | forcenoblur | 0/1 | | forceopaque | 0/1| |
-forceopaqueoverriden | 0/1 | | forceallowsinput | 0/1, forceinput rule | |
-forcenoanims | 0/1 | | forcenoborder | 0/1 | | forcenodim | 0/1 | |
-forcenoshadow | 0/1 | | nofocus | 0/1 | | windowdancecompat | 0/1 | | nomaxsize
-| 0/1 | | dimaround | 0/1 | | keepaspectratio | 0/1 | | alphaoverride | 0/1,
-makes the next setting be override instead of multiply | | alpha | float 0.0 -
-1.0 | | alphainactiveoverride | 0/1, makes the next setting be override instead
-of multiply | | alphainactive | float 0.0 - 1.0 | | activebordercolor | color,
--1 means not set | | inactivebordercolor | color, -1 means not set |
+Prop List:
+| prop | comment |
+| --- | --- |
+| animationstyle | string, cannot be locked |
+| rounding | int, -1 means not overriden |
+| bordersize | int, -1 means not overriden |
+| forcenoblur | 0/1 |
+| forceopaque | 0/1|
+| forceopaqueoverriden | 0/1 |
+| forceallowsinput | 0/1, forceinput rule |
+| forcenoanims | 0/1 |
+| forcenoborder | 0/1 |
+| forcenodim | 0/1 |
+| forcenoshadow | 0/1 |
+| nofocus | 0/1 |
+| windowdancecompat | 0/1 |
+| nomaxsize | 0/1 |
+| dimaround | 0/1 |
+| keepaspectratio | 0/1 |
+| alphaoverride | 0/1, makes the next setting be override instead of multiply |
+| alpha | float 0.0 - 1.0 |
+| alphainactiveoverride | 0/1, makes the next setting be override instead of multiply |
+| alphainactive | float 0.0 - 1.0 |
+| activebordercolor | color, -1 means not set |
+| inactivebordercolor | color, -1 means not set |
 
 ```sh
 hyprctl setprop address:0x13371337 forcenoanims 1 lock  # with locking
@@ -269,7 +283,7 @@ hyprctl getoption general:border_size
 hyprctl getoption input:touchpad:disable_while_typing
 ```
 
-See [Variables](../Variables) for section and options you can use.
+See [Variables](../variables) for section and options you can use.
 
 ## Batch
 

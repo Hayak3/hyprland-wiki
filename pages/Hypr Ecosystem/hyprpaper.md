@@ -26,7 +26,7 @@ You can also `unload` preloaded images to free up memory. `unload all` and
 ### Misc options
 
 | variable | description | type | default |
-| ------------- | ---------------------------------------------------------- | ----- | ------- |
+| --- | --- | --- | --- |
 | splash | enable rendering of the hyprland splash over the wallpaper | bool | false |
 | splash_offset | how far (in % of height) up should the splash be displayed | float | 2.0 |
 | ipc | whether to enable IPC | bool | true |
@@ -34,7 +34,7 @@ You can also `unload` preloaded images to free up memory. `unload all` and
 ## IPC
 
 hyprpaper supports IPC via `hyprctl`. Every dispatcher mentioned in
-[Configuration](#Configuration) can be called with
+[Configuration](#configuration) can be called with
 `hyprctl hyprpaper <dispatcher> <arg(s)>`.
 
 Additionally, you can get some info about the current state of hyprpaper with

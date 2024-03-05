@@ -82,7 +82,7 @@ then lines inside `~/.config/hypr/myColors.conf`, then lines below.
 Use something like
 [libinput-gestures](https://github.com/bulletmark/libinput-gestures), with
 `hyprctl` if you want to expand Hyprland's gestures beyond what's offered in
-[Variables](../Variables).
+[Variables](../variables).
 
 ## Per-device input configs
 
@@ -154,7 +154,7 @@ To set a wallpaper, use a wallpaper utility like
 [hyprpaper](https://github.com/hyprwm/hyprpaper) or
 [swaybg](https://github.com/swaywm/swaybg).
 
-More can be found in [Useful Utilities](../../Useful-Utilities).
+More can be found in [Useful Utilities](../../useful-utilities).
 
 ## Blurring layerSurfaces
 

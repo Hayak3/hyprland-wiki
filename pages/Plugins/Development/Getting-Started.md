@@ -149,5 +149,5 @@ See more info in
 Take a look at the `src/plugins/PluginAPI.hpp` header. It has comments to every
 method to let you know what it is.
 
-For more explanation on a few concepts, see [Advanced](../Advanced) and
-[Plugin Guidelines](../Plugin-Guidelines)
+For more explanation on a few concepts, see [Advanced](../advanced) and
+[Plugin Guidelines](../plugin-guidelines)

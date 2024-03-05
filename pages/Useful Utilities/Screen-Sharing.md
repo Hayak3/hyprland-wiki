@@ -18,7 +18,7 @@ for a great tutorial.
 
 ## Better screensharing
 
-See [the hyprland portal page](../Hyprland-desktop-portal)
+See [the hyprland portal page](../xdg-desktop-portal-hyprland)
 
 ## XWayland
 

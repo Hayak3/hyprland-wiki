@@ -13,4 +13,4 @@ No configuration.
 ## Troubleshooting
 
 See the
-[XDG Desktop Portal wiki page](../../Useful-Utilities/Hyprland-desktop-portal).
+[XDG Desktop Portal wiki page](../../useful-utilities/xdg-desktop-portal-hyprland).

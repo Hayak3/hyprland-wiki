@@ -16,7 +16,7 @@ is not required, but recommended. Without it, locking shows the current screen.
 Variables in the `general` category:
 
 | variable | description | type | default |
-| -------------------------------------------------- | ------------------------------------------------------------------- | ----- | ------- |
+| --- | --- | --- | --- |
 | disable_loading_bar | disables the loading bar on the | | |
 | bottom of the screen while hyprlock is booting up. | bool | false | |
 | hide_cursor | hides the cursor instead of making it visible | bool | true |

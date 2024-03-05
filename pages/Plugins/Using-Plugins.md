@@ -86,7 +86,7 @@ Oh no. Oopsie. Usually means a plugin is broken. `hyprpm disable` it.
 
 ### How do I make my own plugin?
 
-See [here](../Development/Getting-Started).
+See [here](../development/getting-started).
 
 ### Where do I find plugins?
 

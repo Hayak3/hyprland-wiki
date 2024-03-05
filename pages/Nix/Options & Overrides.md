@@ -3,8 +3,8 @@ title: Options & Overrides
 ---
 
 You can override the package through `.override` or `.overrideAttrs`. This is
-easily achievable on [NixOS](../Hyprland-on-NixOS) or
-[Home Manager](../Hyprland-on-Home-Manager).
+easily achievable on [NixOS](../hyprland-on-nixos) or
+[Home Manager](../hyprland-on-home-manager).
 
 ## Package options
 
@@ -39,7 +39,7 @@ the package itself, or through the module options.
 
 ### XWayland HiDPI
 
-See [XWayland](../../Configuring/XWayland).
+See [XWayland](../../configuring/xwayland).
 
 ## Using Nix repl
 

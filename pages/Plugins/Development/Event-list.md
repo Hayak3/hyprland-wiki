@@ -14,7 +14,7 @@ M: means std::unordered_map<std::string, std::any> following props are members.
 {{</ callout >}}
 
 | name | description | argument(s) | cancellable |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------- |
+| --- | --- | --- | --- |
 | tick | fired on a tick, meaning once per (1000 / highestMonitorHz) ms | nullptr | ✕ |
 | activeWindow | fired on active window change | CWindow* | ✕ |
 | keyboardFocus | fired on keyboard focus change. Contains the newly focused surface | wlr_surface* | ✕ |

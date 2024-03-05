@@ -7,7 +7,7 @@ title: Installation
 
 Due to their proprietary nature, Nvidia GPUs have limited compatibility with
 Hyprland. If you want to try Hyprland on Nvidia regardless (many people have
-reported successes), follow the [Nvidia page](../../Nvidia) after installing
+reported successes), follow the [Nvidia page](../../nvidia) after installing
 Hyprland.
 
 ## Distros
@@ -52,7 +52,7 @@ Enable Hyprland in your NixOS configuration:
 programs.hyprland.enable = true;
 ```
 
-For more details, read the [Nix page](../../Nix).
+For more details, read the [Nix page](../../nix).
 
 {{% /details %}}
 
@@ -102,7 +102,10 @@ The hyprland package is available in the main tree:
 emerge --ask gui-wm/hyprland
 ```
 
-Additional packages like hyprlock, hypridle, xdg-desktop-portal-hyprland, hyprland-plugins, hyprpaper and hyprpicker are available in the [GURU](https://wiki.gentoo.org/wiki/Project:GURU) overlay. Community-contributed scripts are also available in GURU as part of the hyprland-contrib package.
+Additional packages like hyprlock, hypridle, xdg-desktop-portal-hyprland,
+hyprland-plugins, hyprpaper and hyprpicker are available in the
+[GURU](https://wiki.gentoo.org/wiki/Project:GURU) overlay. Community-contributed
+scripts are also available in GURU as part of the hyprland-contrib package.
 
 ```sh
 eselect repository enable guru
@@ -275,12 +278,12 @@ ninja -C build
 ninja -C build install --tags runtime,man
 ```
 
-Refer to [Debugging](../../Contributing-and-Debugging) to see how to build &
+Refer to [Debugging](../../contributing-and-debugging) to see how to build &
 debug.
 
 ## Crash on launch
 
-See [Crashes and Bugs](../../Crashes-and-Bugs).
+See [Crashes and Bugs](../../crashes-and-bugs).
 
 ## Custom installation (legacy renderer, etc)
 

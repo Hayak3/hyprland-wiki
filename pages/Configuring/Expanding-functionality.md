@@ -6,10 +6,10 @@ title: Expanding functionality
 Hyprland exposes two powerful sockets for you to use.
 
 The first, socket1, can be fully controlled with `hyprctl`, see its usage
-[here](../Using-hyprctl).
+[here](../using-hyprctl).
 
 The second, socket2, sends events for certain changes / actions and can be used
-to react to different events. See its description [here](../../IPC/).
+to react to different events. See its description [here](../../ipc/).
 
 ## Example script
 

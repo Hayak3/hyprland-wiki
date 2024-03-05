@@ -3,11 +3,11 @@ weight: 2
 title: Variables
 ---
 
-For basic syntax info, see [Configuring Hyprland](../Configuring-Hyprland).
+For basic syntax info, see [Configuring Hyprland](../configuring-hyprland).
 
 This page documents all the "options" of Hyprland. For binds, monitors,
 animations, etc. see the sidebar. For anything else, see
-[Keywords](../Keywords).
+[Keywords](../keywords).
 
 Please keep in mind some options that are layout-specific will be documented in
 the layout pages and not here. (See the Sidebar for Dwindle and Master layouts)
@@ -69,7 +69,7 @@ SHIFT CAPS CTRL/CONTROL ALT MOD2 MOD3 SUPER/WIN/LOGO/MOD4 MOD5
 | resize_on_border | enables resizing windows by clicking and dragging on borders and gaps | bool | false |
 | extend_border_grab_area | extends the area around the border where you can click and drag on, only used when `general:resize_on_border` is on. | int | 15 |
 | hover_icon_on_border | show a cursor icon when hovering over borders, only used when `general:resize_on_border` is on. | bool | true |
-| allow_tearing | master switch for allowing tearing to occur. See [the Tearing page](../Tearing). | bool | false |
+| allow_tearing | master switch for allowing tearing to occur. See [the Tearing page](../tearing). | bool | false |
 
 {{< callout type=warning >}}
 
@@ -160,7 +160,7 @@ strain on the GPU.
 
 {{< callout type=info >}}
 
-_[More about Animations](../Animations)._
+_[More about Animations](../animations)._
 
 {{< /callout >}}
 
@@ -202,7 +202,7 @@ Alternatively, you can use the `localectl` command to discover what is available
 on your system.
 
 For switchable keyboard configurations, take a look at
-[the uncommon tips & tricks page entry](../Uncommon-tips--tricks/#switchable-keyboard-layouts).
+[the uncommon tips & tricks page entry](../uncommon-tips--tricks/#switchable-keyboard-layouts).
 
 {{< /callout >}}
 
@@ -264,7 +264,7 @@ _Subcategory `input:touchdevice:`_
 
 | name | description | type | default |
 | --- | --- | --- | --- |
-| transform | transform the input from touchdevices. The possible transformations are the same as [those of the monitors](../Monitors/#rotating) | int | 0 |
+| transform | transform the input from touchdevices. The possible transformations are the same as [those of the monitors](../monitors/#rotating) | int | 0 |
 | output | the monitor to bind touch devices. The default is autodetection. To stop autotection use an empty string or the "\[\[Empty\]\]" value. | string | \[\[Auto\]\] |
 | enabled | Whether input is enabled for touch devices. | bool | true |
 
@@ -274,7 +274,7 @@ _Subcategory `input:tablet:`_
 
 | name | description | type | default |
 | --- | --- | --- | --- |
-| transform | transform the input from tablets. The possible transformations are the same as [those of the monitors](../Monitors/#rotating) | int | 0 |
+| transform | transform the input from tablets. The possible transformations are the same as [those of the monitors](../monitors/#rotating) | int | 0 |
 | output | the monitor to bind tablets. Empty means unbound. | string | \[\[Empty\]\] |
 | region_position | position of the mapped region in monitor layout. | vec2 | [0, 0] |
 | region_size | size of the mapped region. When this variable is set, tablet input will be mapped to the region. [0, 0] or invalid size means unset. | vec2 | [0, 0] |
@@ -282,7 +282,7 @@ _Subcategory `input:tablet:`_
 
 ### Per-device input config
 
-Described [here](../Keywords#per-device-input-configs).
+Described [here](../keywords#per-device-input-configs).
 
 ### Gestures
 
