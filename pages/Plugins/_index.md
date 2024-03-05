@@ -1,4 +1,4 @@
 ---
-weight: 5
+weight: 6
 title: Plugins
 ---

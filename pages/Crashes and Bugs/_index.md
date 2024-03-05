@@ -1,5 +1,5 @@
 ---
-weight: 9
+weight: 10
 title: Crashes and Bugs
 ---
 
@@ -70,6 +70,7 @@ Clone hyprland: `git clone --recursive https://github.com/hyprwm/Hyprland`
 
 Reproduce your crash. Hyprland will exit back to the tty.
 
-Now, in either `cwd`, `~` or `./build`, search for file(s) named `asan.log.XXXXX` where XXXXX is a number.
+Now, in either `cwd`, `~` or `./build`, search for file(s) named
+`asan.log.XXXXX` where XXXXX is a number.
 
 Zip all of them up and attach to your issue.
