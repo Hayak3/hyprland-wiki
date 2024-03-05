@@ -25,11 +25,11 @@ You can also `unload` preloaded images to free up memory. `unload all` and
 
 ### Misc options
 
-| variable      | description                                                | type  | default |
+| variable | description | type | default |
 | ------------- | ---------------------------------------------------------- | ----- | ------- |
-| splash        | enable rendering of the hyprland splash over the wallpaper | bool  | false   |
-| splash_offset | how far (in % of height) up should the splash be displayed | float | 2.0     |
-| ipc           | whether to enable IPC                                      | bool  | true    |
+| splash | enable rendering of the hyprland splash over the wallpaper | bool | false |
+| splash_offset | how far (in % of height) up should the splash be displayed | float | 2.0 |
+| ipc | whether to enable IPC | bool | true |
 
 ## IPC
 
